@@ -1,0 +1,22 @@
+movieId,title,genres
+1,Plant operation worker,Architecture and Construction
+2,Banker,Finance
+3,Call Center,IT
+4,Hair Stylist,Services
+5,Beautician,Services
+6,Personal Fitness Trainer,Education
+7,Massage Therapist,Services
+8,Retail,Marketing
+9,Waiter,Hospitality
+10,Wedding Planner,Services
+11,Baker,Hospitality
+12,Bartender,Hospitality
+13,Chef,Hospitality
+14,Hotel Manager,Hospitality
+15,Teacher,Education
+16,Doctor,Healthcare
+17,Electrician,Services
+18,DJ,Arts
+19,Musician,Arts
+20,Photographer,Art
+21,Police officer,Law

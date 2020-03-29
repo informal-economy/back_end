@@ -4,20 +4,15 @@ import csv
 from lenskit.algorithms import Recommender
 from lenskit.algorithms.user_knn import UserUser
 
-#Usage:
-#userspecific_rec_csv="./lab4-recommender-systems/jabril-movie-ratings.csv"
-#NewJob=recommender(userspecific_rec_csv)  
-#print("This should be the answer for the best choice! You can change num_recs to get more choices!!")  
-#print(NewJob)
 
-
-
-
-
-#x is the input .csv file that has the columns: 
+#The function input x is the user specific input .csv file that has the columns: 
 #item,title,genres,ratings
 #which is equivalent to 
 #jobId,jobtitle,jobcategory,ratings
+
+
+#The output of the function is a list of so far 20 records of the best job options 
+#[genres, title], i.e. [category, job]
 
 def recommender(x):
     data = ds.MovieLens('lab4-recommender-systems/')
@@ -136,7 +131,7 @@ def recommender(x):
     #print("\tJohn-Green-Bot's rating for 1197 (The Princess Bride) is " + str(jgb_rating_dict[1197]))
 
     #Step 4 Train a new collaborative filtering model to provide recommendations.
-    num_recs = 1  #<---- This is the number of recommendations to generate. You can change this if you want to see more recommendations
+    num_recs = 20  #<---- This is the number of recommendations to generate. You can change this if you want to see more recommendations
 
     user_user = UserUser(15, min_nbrs=3) #These two numbers set the minimum (3) and maximum (15) Niki:Now 4 number of neighbors to consider. These are considered "reasonable defaults," but you can experiment with others too
     algo = Recommender.adapt(user_user)
@@ -159,8 +154,6 @@ def recommender(x):
     
     return(joined_data)
     
-#if __name__ == '__main__':
-#    recommender()
 
 
 

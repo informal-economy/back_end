@@ -71,8 +71,11 @@ def recommender(x):
     joined_data = joined_data[joined_data.columns[3:]]
 
     print("RECOMMENDED FOR ANYBODY:")
-    joined_data.head(rows_to_show)
+    myjoined_data=joined_data.head(rows_to_show)
     print(joined_data.head(rows_to_show))
+  #  myjoined_data=anybody[anybody[1:]]
+    print("RECOMMENDED FOR ANYBODY JUST genres and title:")
+    print(myjoined_data)
 
 
     #Step 2.3
@@ -152,6 +155,14 @@ def recommender(x):
     #joined_data
     print(joined_data)
     
+    if joined_data.empty:
+        
+        joined_data=myjoined_data
+        #joined_data = joined_data[joined_data.columns[2:4]]
+        joined_data = joined_data[['genres','title']]
+        print("DataFrame was empty")
+        print(joined_data)
+        
     return(joined_data)
     
 

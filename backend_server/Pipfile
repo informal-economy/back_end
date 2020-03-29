@@ -8,6 +8,9 @@ verify_ssl = true
 [packages]
 flask = "*"
 flask-pymongo = "*"
+gunicorn = "*"
+flask-sqlalchemy = "*"
+psycopg2 = "*"
 
 [requires]
 python_version = "3.5"

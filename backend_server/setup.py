@@ -2,7 +2,9 @@ from setuptools import setup, find_packages
 
 requires = [
     'flask',
-    'flask-pymongo'
+    'flask-sqlalchemy',
+    'psycopg2',
+    'gunicorn'
 ]
 
 setup(

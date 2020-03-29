@@ -1,22 +1,460 @@
 movieId,title,genres
-1,Plant operation worker,Architecture and Construction
-2,Banker,Finance
-3,Call Center,IT
-4,Hair Stylist,Services
-5,Beautician,Services
-6,Personal Fitness Trainer,Education
-7,Massage Therapist,Services
-8,Retail,Marketing
-9,Waiter,Hospitality
-10,Wedding Planner,Services
-11,Baker,Hospitality
-12,Bartender,Hospitality
-13,Chef,Hospitality
-14,Hotel Manager,Hospitality
-15,Teacher,Education
-16,Doctor,Healthcare
-17,Electrician,Services
-18,DJ,Arts
-19,Musician,Arts
-20,Photographer,Art
-21,Police officer,Law
+1,Plant operation workers,Other
+2,Banker,Other
+3,Call Center,Other
+4,Hair Stylist,Other
+5,Beautician,Other
+6,Personal Fitness Trainer,Other
+7,Massage Therapist,Other
+8,Retail,Other
+9,Sales,Other
+10,"Special sport Instructor (ski, fotball coach etc)",Other
+11,Waiter,Other
+12,Wedding Planner,Other
+13,Amusement and Recreation Attendants,Other
+14,Bakers,Other
+15,Baristas,Other
+16,Bartenders,Other
+17,"Chefs, Cooks (Cafeteria, Restaurant, Fast Food, Street stand)",Other
+18,Food Preparation and Serving Workers,Other
+19,Concierges,Other
+20,Hotel manager,Other
+21,Dishwashers,Other
+22,Housekeepinger,Other
+23,Hosts and Hostesses,Other
+24,Interpreters and Translators,Other
+25,Baby sitters,Other
+26,"Meeting, Convention, and Event Planners",Other
+27,Museum Technicians and Conservators,Other
+28,Recreation Workers,Other
+29,Reservation and Transportation Ticket Agents and Travel Clerks,Other
+30,Brick Mason,Other
+31,Carpenter,Other
+32,Construction,Other
+33,Custodian,Other
+34,Electrician,Other
+35,Firefighter,Other
+36,Heavy Equipment Operator (Construction sites),Other
+37,Home Health Aide,Other
+38,"Gardening, Landscaping, and Groundskeeping",Other
+39,Machinist & Public transport driver,Other
+40,Maintenance at big inistitutions,Other
+41,Painter,Other
+42,Pipefitter,Other
+43,Plumber,Other
+44,Truck Driver / Delivery,Other
+45,DJ,Other
+46,Actor,Other
+47,Musician,Other
+48,TV Meditor,Other
+49,Kindergarden teacher,Education
+50,School teacher,Education
+51,Health care specialist,Other
+52,Warehouse worker,Other
+53,Psychologist,Other
+54,Delivery driver,Other
+55,Social media operator,Other
+56,Funeral worker,Other
+57,Ambulatory care nursing,Health Care
+58,Advanced practice nursing,Health Care
+59,Burn nursing,Health Care
+60,Camp nursing,Health Care
+61,Cardiac nursing,Health Care
+62,Cardiac Intervention nursing,Health Care
+63,Diabetes Nursing,Health Care
+64,Dental nursing,Health Care
+65,Medical case management,Health Care
+66,Community health nursing,Health Care
+67,Correctional nursing,Health Care
+68,Critical care nursing,Health Care
+69,Emergency nursing,Health Care
+70,Environmental health nursing,Health Care
+71,Faith community nursing,Health Care
+72,Flight nursing,Health Care
+73,Forensic nursing,Health Care
+74,Gastroenterology nursing,Health Care
+75,Genetics nursing,Health Care
+76,Geriatric nursing,Health Care
+77,Health visiting,Health Care
+78,Holistic nursing,Health Care
+79,Home health nursing,Health Care
+80,Hospice and palliative care nursing,Health Care
+81,Hyperbaric nursing,Health Care
+82,Immunology and allergy nursing,Health Care
+83,Intravenous therapy nursing,Health Care
+84,Infection control nursing,Health Care
+85,Infectious disease nursing,Health Care
+86,Legal nurse consultant,Health Care
+87,Maternal-child nursing,Health Care
+88,Medical-surgical nursing,Health Care
+89,Military and uniformed services nursing,Health Care
+90,Neonatal nursing,Health Care
+91,Neurosurgical nursing,Health Care
+92,Nephrology nursing,Health Care
+93,Nurse attorney,Health Care
+94,Nursing informatics,Health Care
+95,Nursing management,Health Care
+96,Nursing research,Health Care
+97,Nurse midwifery,Health Care
+98,Obstetrical nursing,Health Care
+99,Occupational health nursing,Health Care
+100,Oncology nursing,Health Care
+101,Orthopaedic nursing,Health Care
+102,Ostomy nursing,Health Care
+103,Pediatric nursing,Health Care
+104,Perianesthesia nursing,Health Care
+105,Perioperative nursing,Health Care
+106,Psychiatric nursing,Health Care
+107,Private duty nursing,Health Care
+108,Public health nursing,Health Care
+109,Pulmonary nursing,Health Care
+110,Quality improvement,Health Care
+111,Radiology nursing,Health Care
+112,Rehabilitation nursing,Health Care
+113,Research nursing,Health Care
+114,Renal nursing,Health Care
+115,School nursing,Health Care
+116,Space nursing,Health Care
+117,Sub-acute nursing,Health Care
+118,Substance abuse nursing,Health Care
+119,Surgical nursing,Health Care
+120,Telenursing,Health Care
+121,Telephone triage nursing,Health Care
+122,Transplantation nursing,Health Care
+123,Travel nursing,Health Care
+124,Urology nursing,Health Care
+125,Utilization management,Health Care
+126,Vascular Access,Health Care
+127,Wound care,Health Care
+128,Chaplain,Health Care
+129,Licensed behavior analyst,Health Care
+130,Licensed professional counselor,Health Care
+131,Mental health professional,Health Care
+132,Occupational therapist,Health Care
+133,Psychiatric nurse,Health Care
+134,Psychiatrist,Health Care
+135,Experimental Psychologist,Health Care
+136,Psychologist,Health Care
+137,Psychotherapist,Health Care
+138,School counselor,Health Care
+139,Sex therapist,Health Care
+140,Social worker,Health Care
+141,Accessory designer,Art
+142,Advertising designer,Art
+143,Animator,Art
+144,Architect,Art
+145,Art administrator,Art
+146,Artisan,Art
+147,Arts administration,Art
+148,Baker,Art
+149,Ceramics artist,Art
+150,Chief creative officer,Art
+151,Colorist,Art
+152,Concept Artist,Art
+153,Curator,Art
+154,Dancer,Art
+155,Design director,Art
+156,Design strategist,Art
+157,Essayist,Art
+158,Event planner,Art
+159,Fashion designer,Art
+160,Fine artist,Art
+161,Floral designer,Art
+162,Graphic designer,Art
+163,Hairstylist,Art
+164,Illustrator,Art
+165,Tattoo artist,Art
+166,Interior designer,Art
+167,Jewellery designer,Art
+168,Lyricist,Art
+169,Make-up artist,Art
+170,Marine designer,Art
+171,Media designer,Art
+172,Music,Art
+173,Party planner,Art
+174,Penciller,Art
+175,Photographer,Art
+176,Photojournalist,Art
+177,Potter,Art
+178,Production designer,Art
+179,Sculptor,Art
+180,Set decorator,Art
+181,Set dresser,Art
+182,Singer,Art
+183,Web designer,Art
+184,Wedding planner,Art
+185,Writer,Art
+186,Ballet dancer,Art/Dancer
+187,Ballet historian,Art/Dancer
+188,Ballet master,Art/Dancer
+189,Choreographer,Art/Dancer
+190,Dance critic,Art/Dancer
+191,Dance historian,Art/Dancer
+192,Dance notator,Art/Dancer
+193,Dance scholar,Art/Dancer
+194,Dance therapist,Art/Dancer
+195,Actor,Entretainer
+196,Archimime,Entretainer
+197,Barker (occupation),Entretainer
+198,Beatboxer,Entretainer
+199,Benshi,Entretainer
+200,Bouffon,Entretainer
+201,Circus arts,Entretainer
+202,Clown,Entretainer
+203,Comedian,Entretainer
+204,Dancer,Entretainer
+205,Drag Queen,Entretainer
+206,Drag King,Entretainer
+207,Emcee,Entretainer
+208,Filmmaker,Entretainer
+209,Flag throwing,Entretainer
+210,Flair bartending,Entretainer
+211,Flatulist,Entretainer
+212,Geisha,Entretainer
+213,Harlequin,Entretainer
+214,Illusionist,Entretainer
+215,Impressionist (entertainment),Entretainer
+216,Itinerant poet,Entretainer
+217,Kobzar,Entretainer
+218,Lirnyk,Entretainer
+219,Magician,Entretainer
+220,Master of ceremonies,Entretainer
+221,Mime,Entretainer
+222,Minstrel,Entretainer
+223,Monologist,Entretainer
+224,Musician,Entretainer
+225,Painter,Entretainer
+226,Party princess,Entretainer
+227,Performing arts,Entretainer
+228,Photographer,Entretainer
+229,Poet,Entretainer
+230,Pornographic actor,Entretainer
+231,Promotional model,Entretainer
+232,Rhapsode,Entretainer
+233,Ring girl,Entretainer
+234,Ringmaster (circus),Entretainer
+235,Scop,Entretainer
+236,Shamakhi dancers,Entretainer
+237,Showgirl,Entretainer
+238,Showman,Entretainer
+239,Showrunner,Entretainer
+240,Singer,Entretainer
+241,Skomorokh,Entretainer
+242,Stunt performer,Entretainer
+243,Theatre practitioner,Entretainer
+244,Vedette (cabaret),Entretainer
+245,Writer,Entretainer
+246,Animator,Film ad TV
+247,Cartoonist,Film ad TV
+248,Tweener,Film ad TV
+249,Director,Film ad TV
+250,Casting Director,Film ad TV
+251,Executive Producer,Film ad TV
+252,Production Manager,Film ad TV
+253,Screenwriter,Film ad TV
+254,Stunt Coordinator,Film ad TV
+255,Costume Designer,Film ad TV
+256,Lighting Technician,Film ad TV
+257,Make-up Artist,Film ad TV
+258,Video Editor,Film ad TV
+259,Voice Actor,Film ad TV
+260,Producer,Theater
+261,Director,Theater
+262,Playwright,Theater
+263,Dramaturge,Theater
+264,Scenic designer,Theater
+265,Scenographer,Theater
+266,Lighting designer,Theater
+267,Costume designer,Theater
+268,Set designer,Theater
+269,Sound designer,Theater
+270,Composer,Theater
+271,Music director,Theater
+272,Choreographer,Theater
+273,Movement director,Theater
+274,Artistic director,Theater
+275,Theater manager,Theater
+276,Director of production,Theater
+277,Technical director,Theater
+278,Costume director,Theater
+279,Marketing director,Theater
+280,Director of public relations,Theater
+281,Director of audience services,Theater
+282,Director of development,Theater
+283,Director of special events,Theater
+284,Dramaturge,Theater
+285,Literary manager,Theater
+286,Company manager,Theater
+287,House manager,Theater
+288,Usher,Theater
+289,Ticketing agent,Theater
+290,Crew chief,Theater
+291,Janitor,Theater
+292,Dresser,Theater
+293,Stage crew,Theater
+294,Fly crew,Theater
+295,Light board operator,Theater
+296,Spotlight operator,Theater
+297,Auto mechanic,Industrial
+298,Beader,Industrial
+299,Bobbin boy,Industrial
+300,Arborist,Industrial
+301,Feller,Industrial
+302,Filling station attendant,Industrial
+303,Foreman,Industrial
+304,Maintenance engineering,Industrial
+305,Mechanic,Industrial
+306,Miller,Industrial
+307,Moldmaker,Industrial
+308,Panel beater,Industrial
+309,Patternmaker,Industrial
+310,Plant operator,Industrial
+311,Plumber,Industrial
+312,Welder,Industrial
+313,Sawfiler,Industrial
+314,Shop foreman,Industrial
+315,Soaper,Industrial
+316,Stationary engineer,Industrial
+317,Wheelwright,Industrial
+318,Woodworkers,Industrial
+319,Bartender,Industrial
+320,Waiter,Industrial
+321,Construction worker,Industrial
+322,Cashier,Industrial
+323,Factory worker,Industrial
+324,Steel erector,Industrial / Metal Working
+325,Welder,Industrial / Metal Working
+326,Boilermaker,Industrial / Metal Working
+327,Pipefitter,Industrial / Metal Working
+328,Millwright,Industrial / Metal Working
+329,Blacksmith,Industrial / Metal Working
+330,Gunsmith,Industrial / Metal Working
+331,Marquetarian,Industrial / Metal Working
+332,Farrier,Industrial / Metal Working
+333,Furniture maker,Industrial / Metal Working
+334,Pewterer,Industrial / Metal Working
+335,CNC,Industrial / Metal Working
+336,Jeweler,Industrial / Metal Working
+337,Smith,Industrial / Metal Working
+338,Founder,Industrial / Metal Working
+339,Bookbinder,sewing
+340,Cordwainer,sewing
+341,Corsetier,sewing
+342,Draper,sewing
+343,Dressmaker,sewing
+344,Embroiderer,sewing
+345,Glover,sewing
+346,Hatter,sewing
+347,Leatherworker,sewing
+348,Milliner,sewing
+349,Parachute rigger,sewing
+350,Quilter,sewing
+351,Sailmaker,sewing
+352,Seamstress,sewing
+353,Shoemaker,sewing
+354,Tailor,sewing
+355,Taxidermist,sewing
+356,Upholsterer,sewing
+357,Aeronautical engineer,Applied Science
+358,Biomedical engineer,Applied Science
+359,Chemical engineer,Applied Science
+360,Educational technologist[1],Applied Science
+361,Electrical engineer,Applied Science
+362,Engineering technician,Applied Science
+363,Engineering technologist,Applied Science
+364,Petrochemical engineer,Applied Science
+365,Mechanical engineer,Applied Science
+366,Computational scientist,Formal Science
+367,Mathematician,Formal Science
+368,Demographic marketer,Formal Science
+369,Statistician,Formal Science
+370,Forensic scientist,General Science
+371,Gentleman scientist – A financially independent scientist who pursues scientific study as a hobby,General Science
+372,Government scientist,General Science
+373,Healthcare science,General Science
+374,Assistant scientist,General Science
+375,Inventor,General Science
+376,Psychologist,General Science
+377,Research fellow,General Science
+378,School science technician,General Science
+379,Science attaché,General Science
+380,Scientist,General Science
+381,Biologist,Life science 
+382,Biomedical scientist[7],Life science 
+383,Botanist,Life science 
+384,Herpetologist,Life science 
+385,Medical laboratory scientist,Life science 
+386,Microbiologist,Life science 
+387,Neuroscientist,Life science 
+388,Clinical pharmaceutical scientist,Life science 
+389,Zoologist,Life science 
+390,Archaeologist,Natural science
+391,Astronaut,Natural science
+392,Astronomer,Natural science
+393,Biochemist,Natural science
+394,Chemist,Natural science
+395,Ecologist[8],Natural science
+396,Geographer,Natural science
+397,Naturalist,Natural science
+398,Oceanographer,Natural science
+399,Paleontologist,Natural science
+400,Pathologist,Natural science
+401,Chemist,Physical science
+402,Physicist,Physical science
+403,Geographer,Earth science
+404,Geologist,Earth science
+405,Geoprofessions,Earth science
+406,Petroleum geologist,Earth science
+407,Urban planner,Social science
+408,Anthropologist,Social science
+409,Economist,Social science
+410,Political scientist,Social science
+411,Sociologist,Social science
+412,Historian,Social science
+413,Chief Experience Officer,Coorporate
+414,Chief financial officer,Coorporate
+415,Chief gaming officer,Coorporate
+416,Chief genealogical officer,Coorporate
+417,Chief human resources officer,Coorporate
+418,Chief information officer,Coorporate
+419,Chief information officer (higher education),Coorporate
+420,Chief information security officer,Coorporate
+421,Chief innovation officer,Coorporate
+422,Chief investment officer,Coorporate
+423,Chief knowledge officer,Coorporate
+424,Chief learning officer,Coorporate
+425,Chief legal officer,Coorporate
+426,Chief marketing officer,Coorporate
+427,Chief medical officer,Coorporate
+428,Chief of staff,Coorporate
+429,Chief operating officer,Coorporate
+430,Chief people officer,Coorporate
+431,Chief privacy officer,Coorporate
+432,Chief process officer,Coorporate
+433,Chief product officer,Coorporate
+434,Chief reputation officer,Coorporate
+435,Chief research officer,Coorporate
+436,Chief restructuring officer,Coorporate
+437,Chief revenue officer,Coorporate
+438,Chief risk officer,Coorporate
+439,Chief scientific officer,Coorporate
+440,Chief security officer,Coorporate
+441,Chief services officer,Coorporate
+442,Chief solutions officer,Coorporate
+443,Chief strategy officer,Coorporate
+444,Chief supply chain officer,Coorporate
+445,Chief sustainability officer,Coorporate
+446,Chief Technological Product Designer,Coorporate
+447,Chief technology officer,Coorporate
+448,Chief technical officer,Coorporate
+449,Chief visibility officer,Coorporate
+450,Chief visionary officer,Coorporate
+451,Chief web officer,Coorporate
+452,Taxicab driver,Driver
+453,Chauffeur,Driver
+454,Pay driver,Driver
+455,Test driver,Driver
+456,Delivery (commerce),Driver
+457,Bus driver,Driver
+458,Truck driver,Driver
+459,Motorman,Driver

@@ -95,12 +95,12 @@ def recommender(x):
     rating_counts = (data.ratings).groupby(['item']).count()
     average_ratings = average_ratings.loc[rating_counts['rating'] > minimum_to_include]
     average_ratings = average_ratings.join(data.movies['genres'], on='item')
-    average_ratings = average_ratings.loc[average_ratings['genres'].str.contains('Services')]
+    average_ratings = average_ratings.loc[average_ratings['genres'].str.contains('sewing')]
 
     sorted_avg_ratings = average_ratings.sort_values(by="rating", ascending=False)
     joined_data = sorted_avg_ratings.join(data.movies['title'], on='item')
     joined_data = joined_data[joined_data.columns[3:]]
-    print("\n\nRECOMMENDED FOR A SERVICES SPECIALIST:")
+    print("\n\nRECOMMENDED FOR A SEWING SPECIALIST:")
     joined_data.head(rows_to_show)
     print(joined_data.head(rows_to_show))
 
@@ -108,7 +108,7 @@ def recommender(x):
     #Step 3 Personalized Recommendation
 
     jabril_rating_dict = {}
-    jgb_rating_dict = {}
+    #jgb_rating_dict = {}
 
     with open(x, newline='') as csvfile:
         ratings_reader = csv.DictReader(csvfile)
@@ -116,14 +116,14 @@ def recommender(x):
             if ((row['ratings'] != "") and (float(row['ratings']) > 0) and (float(row['ratings']) < 6)):
                 jabril_rating_dict.update({int(row['item']): float(row['ratings'])})
       
-    print("Jabril Dictionary")      
-    print(jabril_rating_dict)      
+    #print("Jabril Dictionary")      
+    #print(jabril_rating_dict)      
       
-    with open("./lab4-recommender-systems/jgb-movie-ratings.csv", newline='') as csvfile:
-        ratings_reader = csv.DictReader(csvfile)
-        for row in ratings_reader:
-            if ((row['ratings'] != "") and (float(row['ratings']) > 0) and (float(row['ratings']) < 6)):
-                jgb_rating_dict.update({int(row['item']): float(row['ratings'])})
+#    with open("./lab4-recommender-systems/jgb-movie-ratings.csv", newline='') as csvfile:
+#        ratings_reader = csv.DictReader(csvfile)
+#        for row in ratings_reader:
+#            if ((row['ratings'] != "") and (float(row['ratings']) > 0) and (float(row['ratings']) < 6)):
+#                jgb_rating_dict.update({int(row['item']): float(row['ratings'])})
      
     print("\n\nRating dictionaries assembled!")
     print("Sanity check:")
@@ -133,7 +133,7 @@ def recommender(x):
     #Step 4 Train a new collaborative filtering model to provide recommendations.
     num_recs = 20  #<---- This is the number of recommendations to generate. You can change this if you want to see more recommendations
 
-    user_user = UserUser(15, min_nbrs=3) #These two numbers set the minimum (3) and maximum (15) Niki:Now 4 number of neighbors to consider. These are considered "reasonable defaults," but you can experiment with others too
+    user_user = UserUser(30, min_nbrs=2) #These two numbers set the minimum (3) and maximum (15) Niki:Now 4 number of neighbors to consider. These are considered "reasonable defaults," but you can experiment with others too
     algo = Recommender.adapt(user_user)
     print("algo")
     print(algo)
